@@ -72,7 +72,7 @@ class GameEngine: NSObject {
     private func checkVerticalsForWin() -> Bool{
         for x in 0...2 {
             if (board[x].filter{ $0.mark == Mark.X}.count == 3)
-            || (board[x].filter{ $0.mark == Mark.O}.count == 3){
+                || (board[x].filter{ $0.mark == Mark.O}.count == 3){
                 return true
             }
         }

@@ -10,7 +10,7 @@ import XCTest
 @testable import TicTacToe
 
 class SpaceTests: XCTestCase {
-
+    
     func testAttributes() {
         let coordinate = Coordinate(3,5)
         let mark = Mark.O

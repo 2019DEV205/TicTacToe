@@ -10,7 +10,7 @@ import XCTest
 @testable import TicTacToe
 
 class PlayerTests: XCTestCase {
-
+    
     func testAttributes() {
         let player = Player(name:"PlayerName",mark:Mark.X)
         XCTAssertEqual(player.name, "PlayerName")

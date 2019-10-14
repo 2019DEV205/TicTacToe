@@ -10,7 +10,7 @@ import XCTest
 @testable import TicTacToe
 
 class CoordinateTests: XCTestCase {
-
+    
     func testAttributes() {
         let coordinate = Coordinate(3,5)
         XCTAssertEqual(coordinate.x, 3)

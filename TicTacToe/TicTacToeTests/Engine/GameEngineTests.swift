@@ -10,7 +10,7 @@ import XCTest
 @testable import TicTacToe
 
 class GameEngineTests: XCTestCase {
-
+    
     let gameEngine = GameEngine()
     
     func testInit() {

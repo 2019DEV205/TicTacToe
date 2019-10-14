@@ -19,7 +19,7 @@ class PlayerService {
         currentPlayer = playerX
     }
     
-     func switchCurrentPlayer(){
+    func switchCurrentPlayer(){
         if let player = currentPlayer
         {
             if player.name == playerO.name {
