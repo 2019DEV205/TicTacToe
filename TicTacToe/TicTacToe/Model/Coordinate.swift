@@ -16,4 +16,10 @@ struct Coordinate {
         self.x = x
         self.y = y
     }
+    
+    //Convenience init for converting linear button view tags to x and y
+    init(tag: Int){
+        self.x = (tag - 1) % 3
+        self.y = (tag - 1) / 3
+    }
 }

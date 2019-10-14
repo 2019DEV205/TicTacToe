@@ -1,5 +1,5 @@
 //
-//  CoordinateTest.swift
+//  PlayerTest.swift
 //  TicTacToeTests
 //
 //  Created by 2019_DEV_205 on 14/10/2019.
@@ -9,11 +9,11 @@
 import XCTest
 @testable import TicTacToe
 
-class CoordinateTests: XCTestCase {
+class PlayerTests: XCTestCase {
 
     func testAttributes() {
-        let coordinate = Coordinate(3,5)
-        XCTAssertEqual(coordinate.x, 3)
-        XCTAssertEqual(coordinate.y, 5)
+        let player = Player(name:"PlayerName",mark:Mark.X)
+        XCTAssertEqual(player.name, "PlayerName")
+        XCTAssertEqual(player.mark, Mark.X)
     }
 }

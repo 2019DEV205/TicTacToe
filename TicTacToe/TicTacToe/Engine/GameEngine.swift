@@ -10,6 +10,7 @@ import UIKit
 
 class GameEngine: NSObject {
     
+    var isGameFinished = false
     var board = [[Space]](repeating: [Space](repeating: Space(coordinate: Coordinate(0,0), mark: Mark.Blank), count: 3), count: 3)
     
     override init(){
@@ -44,10 +45,12 @@ class GameEngine: NSObject {
     
     private func checkForMoveOutcome() -> MoveResult{
         if checkDiagonalsForWin() || checkHorizontalsForWin() || checkVerticalsForWin(){
+            isGameFinished = true
             return MoveResult.Win
         }
         else if checkIsBoardFull()
         {
+            isGameFinished = true
             return MoveResult.Draw
         }
         else {
