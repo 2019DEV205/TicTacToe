@@ -10,4 +10,8 @@ import UIKit
 
 class GameEngine: NSObject {
 
+    func process(potentialMove:Space) -> MoveResult {
+        return MoveResult.Valid
+    }
+    
 }
