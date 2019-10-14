@@ -12,7 +12,7 @@ import XCTest
 class CoordinateTests: XCTestCase {
 
     func testAttributes() {
-        let coordinate = Coordinate(x:3,y:5)
+        let coordinate = Coordinate(3,5)
         XCTAssertEqual(coordinate.x, 3)
         XCTAssertEqual(coordinate.y, 5)
     }

@@ -10,6 +10,7 @@ import UIKit
 
 enum MoveResult {
     case Valid
+    case Invalid
     case Taken
     case Win
     case Draw
