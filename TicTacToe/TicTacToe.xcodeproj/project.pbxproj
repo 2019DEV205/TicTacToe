@@ -174,11 +174,11 @@
 		FA454B962354FF4D0015A83D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA454BA2235502860015A83D /* MoveResult.swift */,
 				FA454B98235501FC0015A83D /* Player.swift */,
 				FA454B9C235502380015A83D /* Coordinate.swift */,
 				FA454B9E235502580015A83D /* Space.swift */,
 				FA454B9A235502060015A83D /* Mark.swift */,
+				FA454BA2235502860015A83D /* MoveResult.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";

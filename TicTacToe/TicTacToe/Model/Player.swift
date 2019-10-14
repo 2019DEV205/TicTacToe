@@ -8,6 +8,12 @@
 
 import UIKit
 
-class Player: NSObject {
-
+struct Player{
+    var name:String
+    var mark:Mark
+    
+    init(name:String, mark:Mark) {
+        self.name = name
+        self.mark = mark
+    }
 }

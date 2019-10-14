@@ -8,6 +8,12 @@
 
 import UIKit
 
-class Space: NSObject {
-
+struct Space{
+    var coordinate: Coordinate
+    var mark: Mark
+    
+    init(coordinate:Coordinate, mark:Mark) {
+        self.coordinate = coordinate
+        self.mark = mark
+    }
 }

@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import TicTacToe
 
 class CoordinateTests: XCTestCase {
 
