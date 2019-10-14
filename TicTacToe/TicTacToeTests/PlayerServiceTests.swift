@@ -15,22 +15,22 @@ class PlayerServiceTests: XCTestCase {
     
     override func setUp() {
         let playerX = Player(name:"Player1",mark:Mark.X)
-        let playerY = Player(name:"Player2",mark:Mark.O)
-        playerService = PlayerService(playerX:playerX,playerY:playerY)
+        let playerO = Player(name:"Player2",mark:Mark.O)
+        playerService = PlayerService(playerX:playerX,playerO:playerO)
     }
 
     func testAttributes() {
         XCTAssertEqual(playerService.playerX.name, "Player1")
         XCTAssertEqual(playerService.playerX.mark, Mark.X)
-        XCTAssertEqual(playerService.playerY.name, "Player2")
-        XCTAssertEqual(playerService.playerY.name, Mark.Y)
+        XCTAssertEqual(playerService.playerO.name, "Player2")
+        XCTAssertEqual(playerService.playerO.mark, Mark.O)
     }
     
     func testSwitchPlayer() {
         XCTAssertEqual(playerService.currentPlayer.name, "Player1")
-        playerService.switchPlayer()
+        playerService.switchCurrentPlayer()
         XCTAssertEqual(playerService.currentPlayer.name, "Player2")
-        playerService.switchPlayer()
+        playerService.switchCurrentPlayer()
         XCTAssertEqual(playerService.currentPlayer.name, "Player1")
     }
 }
