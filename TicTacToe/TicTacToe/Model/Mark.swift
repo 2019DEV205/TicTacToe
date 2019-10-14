@@ -8,6 +8,8 @@
 
 import UIKit
 
-class Mark: NSObject {
-
+enum Mark{
+    case Blank
+    case X
+    case O
 }

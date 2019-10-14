@@ -13,16 +13,19 @@
 		FA454B6A2354FE3A0015A83D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA454B682354FE3A0015A83D /* Main.storyboard */; };
 		FA454B6C2354FE3C0015A83D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA454B6B2354FE3C0015A83D /* Assets.xcassets */; };
 		FA454B6F2354FE3C0015A83D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA454B6D2354FE3C0015A83D /* LaunchScreen.storyboard */; };
-		FA454B7A2354FE3D0015A83D /* TicTacToeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B792354FE3D0015A83D /* TicTacToeTests.swift */; };
 		FA454B852354FE3D0015A83D /* TicTacToeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B842354FE3D0015A83D /* TicTacToeUITests.swift */; };
 		FA454B932354FEF20015A83D /* GameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B922354FEF20015A83D /* GameEngine.swift */; };
 		FA454B99235501FC0015A83D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B98235501FC0015A83D /* Player.swift */; };
 		FA454B9B235502060015A83D /* Mark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B9A235502060015A83D /* Mark.swift */; };
 		FA454B9D235502380015A83D /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B9C235502380015A83D /* Coordinate.swift */; };
 		FA454B9F235502580015A83D /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454B9E235502580015A83D /* Space.swift */; };
-		FA454BA12355027C0015A83D /* Move.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BA02355027C0015A83D /* Move.swift */; };
 		FA454BA3235502860015A83D /* MoveResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BA2235502860015A83D /* MoveResult.swift */; };
 		FA454BA5235502990015A83D /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BA4235502990015A83D /* PlayerService.swift */; };
+		FA454BAF2355049E0015A83D /* PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BAE2355049E0015A83D /* PlayerTests.swift */; };
+		FA454BB1235504AA0015A83D /* CoordinateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BB0235504AA0015A83D /* CoordinateTests.swift */; };
+		FA454BB3235504B40015A83D /* SpaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BB2235504B40015A83D /* SpaceTests.swift */; };
+		FA454BB5235505BC0015A83D /* GameEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BB4235505BC0015A83D /* GameEngineTests.swift */; };
+		FA454BB72355076B0015A83D /* PlayerServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA454BB62355076B0015A83D /* PlayerServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +55,6 @@
 		FA454B6E2354FE3C0015A83D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA454B702354FE3C0015A83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA454B752354FE3D0015A83D /* TicTacToeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA454B792354FE3D0015A83D /* TicTacToeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeTests.swift; sourceTree = "<group>"; };
 		FA454B7B2354FE3D0015A83D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA454B802354FE3D0015A83D /* TicTacToeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicTacToeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA454B842354FE3D0015A83D /* TicTacToeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeUITests.swift; sourceTree = "<group>"; };
@@ -62,9 +64,13 @@
 		FA454B9A235502060015A83D /* Mark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mark.swift; sourceTree = "<group>"; };
 		FA454B9C235502380015A83D /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		FA454B9E235502580015A83D /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
-		FA454BA02355027C0015A83D /* Move.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Move.swift; sourceTree = "<group>"; };
 		FA454BA2235502860015A83D /* MoveResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveResult.swift; sourceTree = "<group>"; };
 		FA454BA4235502990015A83D /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		FA454BAE2355049E0015A83D /* PlayerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTests.swift; sourceTree = "<group>"; };
+		FA454BB0235504AA0015A83D /* CoordinateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateTests.swift; sourceTree = "<group>"; };
+		FA454BB2235504B40015A83D /* SpaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceTests.swift; sourceTree = "<group>"; };
+		FA454BB4235505BC0015A83D /* GameEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEngineTests.swift; sourceTree = "<group>"; };
+		FA454BB62355076B0015A83D /* PlayerServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +138,9 @@
 		FA454B782354FE3D0015A83D /* TicTacToeTests */ = {
 			isa = PBXGroup;
 			children = (
-				FA454B792354FE3D0015A83D /* TicTacToeTests.swift */,
+				FA454BA9235504620015A83D /* Model tests */,
+				FA454BB4235505BC0015A83D /* GameEngineTests.swift */,
+				FA454BB62355076B0015A83D /* PlayerServiceTests.swift */,
 				FA454B7B2354FE3D0015A83D /* Info.plist */,
 			);
 			path = TicTacToeTests;
@@ -166,7 +174,6 @@
 		FA454B962354FF4D0015A83D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				FA454BA02355027C0015A83D /* Move.swift */,
 				FA454BA2235502860015A83D /* MoveResult.swift */,
 				FA454B98235501FC0015A83D /* Player.swift */,
 				FA454B9C235502380015A83D /* Coordinate.swift */,
@@ -182,6 +189,16 @@
 				FA454BA4235502990015A83D /* PlayerService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		FA454BA9235504620015A83D /* Model tests */ = {
+			isa = PBXGroup;
+			children = (
+				FA454BAE2355049E0015A83D /* PlayerTests.swift */,
+				FA454BB0235504AA0015A83D /* CoordinateTests.swift */,
+				FA454BB2235504B40015A83D /* SpaceTests.swift */,
+			);
+			path = "Model tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +333,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA454B9D235502380015A83D /* Coordinate.swift in Sources */,
-				FA454BA12355027C0015A83D /* Move.swift in Sources */,
 				FA454B672354FE3A0015A83D /* GameViewController.swift in Sources */,
 				FA454B9F235502580015A83D /* Space.swift in Sources */,
 				FA454B932354FEF20015A83D /* GameEngine.swift in Sources */,
@@ -333,7 +349,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA454B7A2354FE3D0015A83D /* TicTacToeTests.swift in Sources */,
+				FA454BB72355076B0015A83D /* PlayerServiceTests.swift in Sources */,
+				FA454BB3235504B40015A83D /* SpaceTests.swift in Sources */,
+				FA454BAF2355049E0015A83D /* PlayerTests.swift in Sources */,
+				FA454BB1235504AA0015A83D /* CoordinateTests.swift in Sources */,
+				FA454BB5235505BC0015A83D /* GameEngineTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

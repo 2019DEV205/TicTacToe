@@ -8,6 +8,9 @@
 
 import UIKit
 
-class MoveResult: NSObject {
-
+enum MoveResult {
+    case Valid
+    case Taken
+    case Win
+    case Draw
 }

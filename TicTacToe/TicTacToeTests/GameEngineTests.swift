@@ -1,5 +1,5 @@
 //
-//  TicTacToeTests.swift
+//  GameEngineTests.swift
 //  TicTacToeTests
 //
 //  Created by 2019_DEV_205 on 14/10/2019.
@@ -7,9 +7,8 @@
 //
 
 import XCTest
-@testable import TicTacToe
 
-class TicTacToeTests: XCTestCase {
+class GameEngineTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
