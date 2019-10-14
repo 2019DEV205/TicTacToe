@@ -7,27 +7,30 @@
 //
 
 import XCTest
+@testable import TicTacToe
 
 class PlayerServiceTests: XCTestCase {
-
+    
+    private var playerService:PlayerService!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        let playerX = Player(name:"Player1",mark:Mark.X)
+        let playerY = Player(name:"Player2",mark:Mark.O)
+        playerService = PlayerService(playerX:playerX,playerY:playerY)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testAttributes() {
+        XCTAssertEqual(playerService.playerX.name, "Player1")
+        XCTAssertEqual(playerService.playerX.mark, Mark.X)
+        XCTAssertEqual(playerService.playerY.name, "Player2")
+        XCTAssertEqual(playerService.playerY.name, Mark.Y)
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testSwitchPlayer() {
+        XCTAssertEqual(playerService.currentPlayer.name, "Player1")
+        playerService.switchPlayer()
+        XCTAssertEqual(playerService.currentPlayer.name, "Player2")
+        playerService.switchPlayer()
+        XCTAssertEqual(playerService.currentPlayer.name, "Player1")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
